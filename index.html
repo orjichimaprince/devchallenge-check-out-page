@@ -15,6 +15,7 @@
             height: 100%;
             box-sizing: border-box;
             padding: 1.4rem;
+            min-width: 390px;
         }
         
         .checkof {
@@ -92,16 +93,35 @@
             border-radius: 4px;
         }
         
-        #one {
+        .one {
             color: #333333;
+            font-size: 24;
+            background: #E0E0E0;
+            border-radius: 4px;
+            align-items: center;
+            text-align: center;
+            margin: 12px;
         }
         
-        #minus {
-            color: #828282;
+        .minus {
+            color: #333333;
+            font-size: 24;
+            background: #E0E0E0;
+            border-radius: 4px;
+            margin-left: 35%;
+            justify-content: space-between;
+            margin: 15px;
+            align-self: center;
         }
         
-        #plus {
-            color: #828282;
+        .plus {
+            color: #333333;
+            font-size: 24;
+            background: #E0E0E0;
+            border-radius: 4px;
+            margin-left: 35%;
+            justify-content: space-between;
+            margin: 15px
         }
         
         .vintageBag {
@@ -156,12 +176,23 @@
             margin-block: 2.5rem;
         }
         
+        #checkbox,
         input {
             border: 1px solid #828282;
             border-radius: 7px;
             width: 100%;
             height: 2.5rem;
             margin-block: 0.39rem;
+            padding-left: 10%;
+        }
+        
+        input[placeholder="Your postal code"] {
+            padding-left: 16%;
+        }
+        
+        select,
+        option {
+            text-indent: 1.2rem;
         }
         
         small {
@@ -202,7 +233,7 @@
         }
         
          ::placeholder {
-            padding-left: 2.3rem;
+            /* padding-left: 2.3rem; */
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 600;
@@ -238,13 +269,13 @@
         #city {
             background-image: url(Assets/location_city.svg);
             background-repeat: no-repeat;
-            background-size: 20px;
+            background-size: 18px;
             background-position-y: center;
             background-position-x: 2%;
         }
         
         #postal {
-            background-image: url(Assets/mailBox.svg);
+            background-image: url(Assets/markunread_mailbox_FILL1_wght400_GRAD-25_opsz40.svg);
             background-repeat: no-repeat;
             background-size: 20px;
             background-position-y: center;
@@ -254,26 +285,27 @@
         input[type=checkbox],
         #checkbox {
             flex: none;
-            margin: 0px -160px;
+            margin: 0px -155px;
             height: unset;
             margin-block: unset;
             border: 1px solid #828282;
             border-radius: 4px;
+            padding: 20px;
         }
         
-        .lastform,
         #checkboxtext {
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 500;
             font-size: 10.1px;
-            line-height: 12px;
+            line-height: 1px;
             color: #4F4F4F;
+            margin-inline-start: 0.4rem;
         }
         
         .btn {
             width: 10.5rem;
-            height: 3.8rem;
+            height: 3rem;
             margin-left: 50%;
             margin-block: 1.5rem;
             background: #F2994A;
@@ -332,8 +364,9 @@
             }
             .wrapper {
                 margin-right: 49%;
-                margin-top: -64%;
+                /* margin-top: -64%; */
                 min-height: auto;
+                margin-top: -36.5rem;
             }
             #contactandshipping {
                 font-family: 'Montserrat';
@@ -361,7 +394,7 @@
                 color: #4F4F4F;
             }
              ::placeholder {
-                padding-left: 2.3rem;
+                /* padding-left: 2.3rem; */
                 font-family: 'Montserrat';
                 font-style: normal;
                 font-weight: 600;
@@ -382,15 +415,6 @@
                 font-size: 15px;
                 line-height: 15px;
             }
-            #postal {
-                margin-block: 0.39rem;
-                max-width: 100%;
-                border: 1px solid #828282;
-                border-radius: 13px;
-                padding-inline: 1.5rem;
-                color: red;
-                margin-right: -2rem;
-            }
             .footer,
             .footer>small {
                 font-family: 'Montserrat';
@@ -402,36 +426,32 @@
                 color: #BDBDBD;
                 margin-block: 2rem;
             }
-            #checkbox {
-                flex: none;
-                /* margin: 0px -px; */
-                height: unset;
-                margin-block: unset;
-                border: 1px solid #828282;
-                border-radius: 4px;
-                margin-inline: 2rem;
-            }
-            .lastform,
             #checkboxtext {
                 font-family: 'Montserrat';
                 font-style: normal;
                 font-weight: 500;
                 font-size: 10.1px;
                 line-height: 12px;
+                margin-left: -0.2rem;
                 color: #4F4F4F;
+                max-width: 80%;
             }
             input[type=checkbox],
             #checkbox {
                 flex: none;
-                margin: 0px -14rem;
+                margin: 0px -10rem;
                 height: unset;
                 margin-block: unset;
                 border: 1px solid #828282;
                 border-radius: 4px;
             }
+            select,
+            #checkbox {
+                padding-right: 20px;
+            }
             .btn {
                 width: 10.5rem;
-                height: 3.8rem;
+                height: 3rem;
                 margin-left: 63.5%;
                 margin-block: 1.5rem;
                 background: #F2994A;
@@ -495,11 +515,11 @@
             .cartinput {
                 border: 1px solid #828282;
                 border-radius: 12px;
-                width: 92%;
-                /* width: 134.25px; */
+                max-width: 92%;
                 margin-left: -0.8rem;
                 height: 3rem;
-                margin-block: 2rem;
+                row-gap: 80px;
+                margin-block: 1.8rem;
             }
             button {
                 margin: 1rem;
@@ -510,14 +530,35 @@
                 background: #E0E0E0;
                 border-radius: 4px;
             }
-            #one {
+            .one {
                 color: #333333;
+                font-size: 24;
+                background: #E0E0E0;
+                border-radius: 4px;
+                align-items: center;
+                text-align: center;
+                /* border: 2px solid red; */
+                margin: 6px;
+                margin-top: 20px;
             }
-            #minus {
-                color: #828282;
+            .minus {
+                color: #333333;
+                font-size: 24;
+                background: #E0E0E0;
+                border-radius: 4px;
+                margin-left: 35%;
+                justify-content: space-between;
+                margin: 15px;
+                align-self: center;
             }
-            #plus {
-                color: #828282;
+            .plus {
+                color: #333333;
+                font-size: 24;
+                background: #E0E0E0;
+                border-radius: 4px;
+                margin-left: 35%;
+                justify-content: space-between;
+                margin: 15px
             }
             hr {
                 border: 0.5px solid #BDBDBD;
@@ -551,16 +592,12 @@
 </head>
 
 <body>
-    <!-- <div class="wrapper"></div> -->
-
     <main>
         <div>
             <h1 class="checkof">Checkout</h1>
         </div>
         <section>
             <div class="container">
-                <!-- <span id="vintageText">Vintage Backbag</span><br>
-                <span id="fiftyfour">$54.99</span><small><del id:>$94.99</del></small> -->
                 <div>
                     <img src="Assets/photo1.png" alt="Vintage bag" class="vintageBag">
                 </div>
@@ -568,9 +605,9 @@
                     <span id="vintageText">Vintage Backbag</span><br>
                     <span id="fiftyfour">$54.99</span><small><del id="ninetyfour">$94.99</del></small>
                     <div class="cartinput">
-                        <button id="minus"><span>-</span></button>
-                        <span id="one"><span>1</span></span>
-                        <button id="plus"><span>+</span></button>
+                        <span class="one">-</span></inp>
+                        <span class="one">1</span></span>
+                        <span class="one">+</span></span>
                     </div>
                 </div>
                 <div>
@@ -581,9 +618,9 @@
                     <span id="fiftyfour">$74.99</span><small><del id="ninetyfour">$124.99</del></small>
 
                     <div class="cartinput">
-                        <button id="minus"><span>-</span></button>
-                        <span id="one"><span>1</span></span>
-                        <button id="plus"><span>+</span></button>
+                        <span class="one"><span>-</span></span>
+                        <span class="one"><span>1</span></span>
+                        <span class="one"><span>+</span></span>
                     </div>
                 </div>
                 <div>
@@ -618,79 +655,150 @@
         <div class="wrapper">
             <section class="contactsection">
                 <p id="contactandshipping">contact information</p>
-                <form action="#">
+                <form action="signup.php" method="POST">
                     <label>
                   <small>E-mail</small>
                 </label>
                     <br>
-                    <input type="text" placeholder="Enter your  email..." id="email"><br>
+                    <input type="email" placeholder="Enter your  email..." id="email" required><br>
                     <label>
                   <small>phone</small>
                 </label>
                     <br>
-                    <input type="text" placeholder="Enter your  phone..." id="phone"><br>
-                </form>
+                    <input type="text" placeholder="Enter your  phone..." id="phone" required><br>
+
             </section>
             <section>
                 <p id="contactandshipping">shipping address</p>
-                <form action="#">
-
-                    <label>
+                <label>
                 <small>Full name</small>
               </label>
-                    <br>
-                    <input type="check" placeholder="Rodney Cotton" id="fullname">
-                    <br>
-                    <label>
+                <br>
+                <input type="text" name="first_name" placeholder="Rodney Cotton" id="fullname" required>
+                <br>
+                <label>
                 <small>Address</small>
               </label>
-                    <br>
-                    <input type="text" placeholder="Your address" id="address..">
-                    <br>
-                    <label>
+                <br>
+                <input type="text" placeholder="Your address.." id="address" required>
+                <br>
+                <label>
                 <small>city</small>
               </label>
-                    <input type="text" placeholder="Your city.." id="city">
-                    <br>
-                    <div class="main">
-                        <!-- first grid item -->
-                        <label>
+                <input type="text" placeholder="Your city.." id="city" required>
+                <br>
+                <div class="main">
+                    <!-- first grid item -->
+                    <label>
                     <small>country</small><br>
                     </label>
-                        <!-- second grid item -->
-                        <label>
+                    <!-- second grid item -->
+                    <label>
                      <small>postal code</small> 
                     </label>
 
-                        <!-- third grid item  -->
-                        <select name="countries" class="countryandpostal">
-                    <option value="select">Your country</option>
+                    <!-- third grid item  -->
+                    <select name="select" multiselect-select-all="true" multiselect-min-item="3" class="countryandpostal" required>
+                    <option value="select"id="checkbox" selected disabled style="text-align:center;position:absolute;display:inline-block;padding-left: 20%;">Your country</option>
                     <option value="Nigeria">Nigerian</option>
                     <option value="usa">United states of America</option>
                     <option value="englan">England</option>
                     <option value="canada">Canada</option>
                   </select>
 
-                        <!-- fourth grid item -->
-                        <input type="select" class="countryandpostal" id="postal" placeholder="Your postal code">
-                        <br>
-                    </div>
+                    <!-- fourth grid item -->
+                    <input type="select" id="postal" placeholder="Your postal code" required>
+                    <br>
+                </div>
+                <div class="lastform">
+                    <input type="checkbox">
+                    <label id="checkboxtext" required>save this information for next time</label>
+                    <button class="btn" type="submit">
+                          <span>continue</span>
+                       </button>
+                </div>
                 </form>
             </section>
-            <div class="lastform">
-                <form>
-                    <input type="checkbox" id="checkbox">
-                    <label id="checkboxtext">save this information for next time</label>
-                </form>
-                <button class="btn" type="submit">
-              <span>continue</span>
-            </button>
-            </div>
         </div>
         <footer class="footer"><small>created by orjichimaprince-devChallenges.io</small></footer>
-    </main>
+        <script>
+            // const subtraction = document.querySelectorAll(".minus"),
+            //     one = document.querySelectorAll(".one"),
+            //     plus = document.querySelectorAll(".plus");
+            let numberss = 0;
+            const subtraction = document.querySelector("#minus"),
+                one = document.querySelector("#one"),
+                plus = document.querySelector("#plus");
 
 
+            const subtractions = document.querySelector(".minus"),
+                ones = document.querySelector(".one"),
+                pluss = document.querySelector(".plus");
+
+
+
+            //         let numberss = 0
+            //         for (let num of plus) {
+            //             num.addEventListener('click', function() {
+            //                 numberss++;
+            //                 one.innerText = numberss
+            //                 return numberss
+            //             });
+            // }
+            // let numberss = 0
+            // plus.forEach(inp => inp.addEventListener('click', function() {
+            //     numberss++;
+
+            //     console.log(numberss)
+            //     console.log(one.innerText = numberss)
+            // }))
+
+            // subtraction.forEach(inp => inp.addEventListener('click', function() {
+
+            //     numberss < 1 ? 0 : numberss--
+            //         one.innerText = numberss
+            //     console.log(numberss)
+            // }))
+
+            // one.forEach(inp => inp.addEventListener('click', function() {
+
+            //     one.innerText = numberss
+            //     console.log(innerText)
+
+            // }))
+            // console.log(numberss)
+
+
+            // for (let i = 0; i < plus.length; plus++) {
+            //     plus.addEventListener('click', () => {
+            //         numberss++;
+            //         one.innerText = numberss
+            //         console.log(numberss)
+            //     })
+            // }
+            plus.addEventListener('click', () => {
+                numberss++;
+                one.innerText = numberss
+                console.log(numberss)
+            })
+            subtraction.addEventListener('click', () => {
+                // numberss--
+                numberss <= 1 ? 1 : numberss--
+                    one.innerText = numberss
+                console.log(numberss)
+            })
+            pluss.addEventListener('click', () => {
+                numberss++;
+                ones.innerText = numberss
+                console.log(numberss)
+            })
+            subtractions.addEventListener('click', () => {
+                // numberss--
+                numberss <= 1 ? 1 : numberss--
+                    ones.innerText = numberss
+                console.log(numberss)
+            })
+        </script>
 </body>
 
 </html>
